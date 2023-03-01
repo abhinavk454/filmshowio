@@ -126,4 +126,5 @@ REST_FRAMEWORK = {
     #     'anon': '100/day',
     # },
     'DEFAULT_MAX_FILE_SIZE': '4294967296',  # 4GB in bytes
+    'MULTIPART_PARSER_TIMEOUT': 3600,
 }
