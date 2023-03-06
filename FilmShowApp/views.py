@@ -32,6 +32,6 @@ class GetStreamingVideo(generics.RetrieveAPIView):
                     yield chunk
 
         response = StreamingHttpResponse(stream_file(video_file))
-        response['Content-Type'] = 'video/x-matroska'
+        response['Content-Type'] = 'video/*'
         response['Content-Length'] = video_file.size
         return response
