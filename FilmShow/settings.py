@@ -3,7 +3,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = "django-insecure-s%w_&yal8=&+45hpa789ad0kgesi9m#g(9oo-2^ygm8qy6#51z"
+SECRET_KEY = "django-insecure"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -34,6 +34,7 @@ MIDDLEWARE = [
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
     "corsheaders.middleware.CorsMiddleware",
+    # 'django.middleware.security.SecurityMiddleware',
 ]
 
 ROOT_URLCONF = "FilmShow.urls"

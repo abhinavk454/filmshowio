@@ -138,3 +138,6 @@ GitHub.sublime-settings
 
 # assets
 videos/
+
+cert.pem
+key.pem
