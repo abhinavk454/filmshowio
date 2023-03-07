@@ -1,12 +1,19 @@
 from .models import Video
 from .serializers import VideoSerializers
-from rest_framework import generics
+from rest_framework import generics, status
 from django.http import StreamingHttpResponse
+from rest_framework.response import Response
 
 
 class UploadVideo(generics.CreateAPIView):
     queryset = Video.objects.all()
     serializer_class = VideoSerializers
+
+
+class UpdateVideo(generics.UpdateAPIView):
+    queryset = Video.objects.all()
+    serializer_class = VideoSerializers
+    lookup_field = 'pk'
 
 
 class GetVideo(generics.ListAPIView):
