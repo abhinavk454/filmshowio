@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "filmshowio"
-version = "0.0.1"
+version = "0.1.1"
 description = "A virtual cinema hall"
 authors = ["Abhinav Kumar <abhinav.vikash2@gmail.com>"]
 license = "MIT"
